@@ -79,7 +79,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +409,8 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../images/sh-bg.jpg);
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .slider_section .dot_design {
@@ -435,6 +436,7 @@ a:focus {
 .slider_section #customCarousel1 {
   width: 100%;
   position: unset;
+
 }
 
 .slider_section .detail-box {
