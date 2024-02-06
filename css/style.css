@@ -409,8 +409,9 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../images/sh-bg.jpg);
-  background-size: 100% auto;
+  /*background-size: 100% auto;*/
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slider_section .dot_design {
