@@ -139,8 +139,8 @@
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Lokalizacja inwestycji</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="wprowadź miejscowość" class="form-control input-md">
+  <div class="col-md-6">
+  <input id="textinput" name="textinput" type="text" placeholder="wprowadź miejscowość" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -148,7 +148,7 @@
 <!-- Select Basic -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic">Rodzaj inwestycji</label>
-  <div class="col-md-4">
+  <div class="col-md-5">
     <select id="selectbasic" name="selectbasic" class="form-control">
       <option value="1">budynek mieszkalny</option>
       <option value="2">mieszkanie</option>
@@ -162,7 +162,7 @@
 <!-- Select Basic -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic">Etap budowy</label>
-  <div class="col-md-4">
+  <div class="col-md-5">
     <select id="selectbasic" name="selectbasic" class="form-control">
       <option value="1">projekt</option>
       <option value="2">stan zerowy</option>
@@ -177,7 +177,7 @@
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Powierzchnia użytkowa">Powierzchnia użytkowa</label>  
-  <div class="col-md-4">
+  <div class="col-md-5">
   <input id="Powierzchnia użytkowa" name="Powierzchnia użytkowa" type="text" placeholder="wprowadź powierzchnię" class="form-control input-md">
   <span class="help-block">[m2]</span>  
   </div>
@@ -195,7 +195,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Ilość kondygnacji">Ilość kondygnacji</label>  
   <div class="col-md-4">
-  <input id="Ilość kondygnacji" name="Ilość kondygnacji" type="text" placeholder="wprowadź liczbę" class="form-control input-md">
+  <input id="Ilość kondygnacji" name="Ilość kondygnacji" type="text" placeholder="wprowadź ilość" class="form-control input-md">
     
   </div>
 </div>
@@ -336,11 +336,12 @@
   </div>
 </div>
 
-<!-- Textarea -->
+<!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Inne funkcje">Inne funkcje</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="Inne funkcje" name="Inne funkcje">wprowadź funkcje niewymienione w zestawieniu ...</textarea>
+  <label class="col-md-4 control-label" for="Inne funkcje">Inne funkcje</label>  
+  <div class="col-md-8">
+  <input id="Inne funkcje" name="Inne funkcje" type="text" placeholder="wprowadź inne funkcje niewymienione w formularzu" class="form-control input-md">
+    
   </div>
 </div>
 
@@ -371,11 +372,12 @@
   </div>
 </div>
 
-<!-- Textarea -->
+<!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Inne systemy</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea">Inne systemy niewymienione w zestawieniu</textarea>
+  <label class="col-md-4 control-label" for="Inne systemy w inwestycji">Inne systemy w inwestycji</label>  
+  <div class="col-md-8">
+  <input id="Inne systemy w inwestycji" name="Inne systemy w inwestycji" type="text" placeholder="wprowadź inne systemy w inwestycji niewymienione w formularzu" class="form-control input-md">
+    
   </div>
 </div>
 
@@ -419,7 +421,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Imię architekta/projektanta">Imię architekta/projektanta</label>  
   <div class="col-md-4">
-  <input id="Imię architekta/projektanta" name="Imię architekta/projektanta" type="text" placeholder="wprowadź imię Imię architekta/projektanta" class="form-control input-md">
+  <input id="Imię architekta/projektanta" name="Imię architekta/projektanta" type="text" placeholder="wprowadź imię architekta/projektanta" class="form-control input-md">
     
   </div>
 </div>
@@ -437,7 +439,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Telefon kontaktowy do architekta/projektanta">Telefon kontaktowy do architekta/projektanta</label>  
   <div class="col-md-4">
-  <input id="Telefon kontaktowy do architekta/projektanta" name="Telefon kontaktowy do architekta/projektanta" type="text" placeholder="wprowadź do architekta/projektanta" class="form-control input-md">
+  <input id="Telefon kontaktowy do architekta/projektanta" name="Telefon kontaktowy do architekta/projektanta" type="text" placeholder="wprowadź kontakt do architekta/projektanta" class="form-control input-md">
     
   </div>
 </div>
@@ -451,11 +453,16 @@
   </div>
 </div>
 
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Wyślij formularz">Wyślij formularz</label>
+  <div class="col-md-4">
+    <button id="Wyślij formularz" name="Wyślij formularz" class="btn btn-success">wyślij</button>
+  </div>
+</div>
+
 </fieldset>
 </form>
-          
-
-
           <!-- Koniec formularza -->
 
 
