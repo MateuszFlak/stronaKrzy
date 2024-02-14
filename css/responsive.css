@@ -1,6 +1,13 @@
 @media (max-width: 1300px) {
+  #customCarousel1 h1{  /*Dodac*/
+		font-size: 1.5rem;
+	}
+  
   .quote_btn-container {
-    display: none;
+    /*display: none;*/
+    margin: 0 auto;
+    display: block;
+	  text-align: center;
   }
 
   .custom_nav-container .navbar-nav {
@@ -34,9 +41,9 @@
     margin: 5px 0;
   }
 
-  .slider_section {
+  /*.slider_section {
     padding: 75px 0;
-  }
+  }*/
 
   .project_section .filter_box {
     flex-direction: column;
