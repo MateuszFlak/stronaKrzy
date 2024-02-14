@@ -441,6 +441,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
+  padding-top: 40px;
   color: #252525;
 }
 
