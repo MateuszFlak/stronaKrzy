@@ -136,6 +136,13 @@
 }
 
 @media (max-width: 480px) {
+.slider_section{
+	display: none;
+}
+.layout_padding {
+	    padding: 30px 0;
+}
+	
   .slider_section .detail-box h1 {
     font-size: 2rem;
   }
