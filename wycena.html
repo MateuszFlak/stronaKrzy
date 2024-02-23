@@ -137,123 +137,190 @@
 <legend>Wyceń swój inteligentny dom</legend>
 
 <!-- Text input-->
+
 <div class="form-group row">
   <label for="textinput" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
   <div class="col-md-6">
     <input type="text" id="textinput" name="textinput" placeholder="wprowadź miejscowość" class="form-control" required>
   </div>
 </div>
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz wyceny projektu</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-<div class="container mt-5">
-    <h2>Formularz wyceny projektu</h2>
-    <form>
-
-        <!-- Rodzaj inwestycji -->
-        <div class="form-group row">
-            <label for="selectInvestmentType" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
-            <div class="col-md-8">
-                <select id="selectInvestmentType" name="selectInvestmentType" class="form-control">
-                    <option value="1">Budynek mieszkalny</option>
-                    <option value="2">Mieszkanie</option>
-                    <option value="3">Hotel</option>
-                    <option value="4">Biuro</option>
-                    <option value="5">Mieszkanie na wynajem</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Etap budowy -->
-        <div class="form-group row">
-            <label for="selectConstructionStage" class="col-md-4 col-form-label">Etap budowy</label>
-            <div class="col-md-8">
-                <select id="selectConstructionStage" name="selectConstructionStage" class="form-control">
-                    <option value="1">Projekt</option>
-                    <option value="2">Stan zerowy</option>
-                    <option value="3">Stan surowy otwarty</option>
-                    <option value="4">Stan surowy zamknięty</option>
-                    <option value="5">Prace wykończeniowe</option>
-                    <option value="6">Zakończenie budowy</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- Powierzchnia użytkowa -->
-        <div class="form-group row">
-            <label for="usableArea" class="col-md-4 col-form-label">Powierzchnia użytkowa [m2]</label>
-            <div class="col-md-8">
-                <input type="text" id="usableArea" name="usableArea" placeholder="Wprowadź powierzchnię" class="form-control">
-            </div>
-        </div>
-
-        <!-- Dodaj projekt elektryczny -->
-        <div class="form-group row">
-            <label for="fileElectricalProject" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
-            <div class="col-md-8">
-                <input type="file" id="fileElectricalProject" name="fileElectricalProject" class="form-control-file">
-            </div>
-        </div>
-
-        <!-- Ilość kondygnacji -->
-        <div class="form-group row">
-            <label for="numberOfFloors" class="col-md-4 col-form-label">Ilość kondygnacji</label>
-            <div class="col-md-8">
-                <input type="text" id="numberOfFloors" name="numberOfFloors" placeholder="Wprowadź ilość" class="form-control">
-            </div>
-        </div>
-
-        <!-- Pokój dzienny -->
-        <div class="form-group row">
-            <label for="livingRoom" class="col-md-4 col-form-label">Pokój dzienny</label>
-            <div class="col-md-8">
-                <input type="text" id="livingRoom" name="livingRoom" placeholder="Wprowadź ilość" class="form-control">
-            </div>
-        </div>
-
-        <!-- Sypialnia -->
-        <div class="form-group row">
-            <label for="bedroom" class="col-md-4 col-form-label">Sypialnia</label>
-            <div class="col-md-8">
-                <input type="text" id="bedroom" name="bedroom" placeholder="Wprowadź ilość" class="form-control">
-            </div>
-        </div>
-
-        <!-- Łazienka -->
-        <div class="form-group row">
-            <label for="bathroom" class="col-md-4 col-form-label">Łazienka</label>
-            <div class="col-md-8">
-                <input type="text" id="bathroom" name="bathroom" placeholder="Wprowadź ilość" class="form-control">
-            </div>
-        </div>
-
-        <!-- Dodatkowe pola -->
-        <!-- Tutaj możesz dodać więcej pól zgodnie z powyższym schematem -->
-
-        <!-- Przycisk wysyłania -->
-        <div class="form-group row">
-            <div class="col-md-8 offset-md-4">
-                <button type="submit" class="btn btn-primary">Wyślij formularz</button>
-            </div>
-        </div>
-
-    </form>
+  
+<div class="form-group row">
+  <label for="selectbasic" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
+  <div class="col-md-5">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">Budynek mieszkalny</option>
+      <option value="2">Mieszkanie</option>
+      <option value="3">Hotel</option>
+      <option value="4">Biuro</option>
+      <option value="5">Mieszkanie na wynajem</option>
+    </select>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+  <div class="form-group row">
+  <label for="constructionStage" class="col-md-4 col-form-label">Etap budowy</label>
+  <div class="col-md-5">
+    <select id="constructionStage" name="constructionStage" class="form-control">
+      <option value="1">Projekt</option>
+      <option value="2">Stan zerowy</option>
+      <option value="3">Stan surowy otwarty</option>
+      <option value="4">Stan surowy zamknięty</option>
+      <option value="5">Prace wykończeniowe</option>
+      <option value="6">Zakończenie budowy</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="usableArea" class="col-md-4 col-form-label">Powierzchnia użytkowa [m<sup>2</sup>]</label>
+  <div class="col-md-5">
+    <input id="usableArea" name="usableArea" type="text" placeholder="Wprowadź powierzchnię" class="form-control" aria-describedby="usableAreaHelp">
+    <small id="usableAreaHelp" class="form-text text-muted">Podaj wartość w metrach kwadratowych.</small>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="electricalProject" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
+  <div class="col-md-5">
+    <input type="file" id="electricalProject" name="electricalProject" class="form-control-file">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="numberOfFloors" class="col-md-4 col-form-label">Ilość kondygnacji</label>
+  <div class="col-md-5">
+    <input type="text" id="numberOfFloors" name="numberOfFloors" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+  <div class="form-group row">
+  <label for="livingRoomCount" class="col-md-4 col-form-label">Pokój dzienny</label>
+  <div class="col-md-5">
+    <input type="text" id="livingRoomCount" name="livingRoomCount" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+  <div class="form-group row">
+  <label for="bedroom" class="col-md-4 col-form-label">Sypialnia</label>
+  <div class="col-md-5">
+    <input type="text" id="bedroom" name="bedroom" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+  <div class="form-group row">
+  <label for="bathroom" class="col-md-4 col-form-label">Łazienka</label>
+  <div class="col-md-4">
+    <input type="text" id="bathroom" name="bathroom" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="toilet" class="col-md-4 col-form-label">Toaleta</label>
+  <div class="col-md-5">
+    <input type="text" id="toilet" name="toilet" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+  <div class="form-group row">
+  <label for="kitchen" class="col-md-4 col-form-label">Kuchnia</label>
+  <div class="col-md-5">
+    <input type="text" id="kitchen" name="kitchen" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+  <div class="form-group row">
+  <label for="pantryCloset" class="col-md-4 col-form-label">Spiżarnia / Garderoba</label>
+  <div class="col-md-5">
+    <input type="text" id="pantryCloset" name="pantryCloset" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="garage" class="col-md-4 col-form-label">Garaż</label>
+  <div class="col-md-5">
+    <input type="text" id="garage" name="garage" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="otherRooms" class="col-md-4 col-form-label">Inne pomieszczenia</label>
+  <div class="col-md-5">
+    <input type="text" id="otherRooms" name="otherRooms" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="utilityRooms" class="col-md-4 col-form-label">Pomieszczenia gospodarcze / Kotłownia</label>
+  <div class="col-md-5">
+    <input type="text" id="utilityRooms" name="utilityRooms" placeholder="Wprowadź ilość" class="form-control">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-md-4 col-form-label" for="FunkcjeInteligentnegoDomu">Funkcje inteligentnego domu</label>
+  <div class="col-md-8">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-0" value="1">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-0">Oświetlenie</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-1" value="2">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Gniazdka</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-2" value="3">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Klimatyzacja</label>
+    </div>
+            
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-3" value="4">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Żaluzje/ rolety/ zasłony/ pergole</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-4" value="5">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Czujniki ruchu/ dymu/ zalania/ gazów</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-5" value="6">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Czujniki otwarcia drzwi/ okien</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-6" value="7">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Otwieranie furtki/ drzwi/ bramy</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-7" value="8">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Sterowanie audio</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-8" value="9">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Sauna</label>
+    </div>
+
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-9" value="10">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Podlewanie</label>
+    </div>
+   
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]" id="FunkcjeInteligentnegoDomu-9" value="10">
+      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1"> Zarządzanie energią</label>
+    </div>
+    <!-- Dodaj kolejne elementy zgodnie z powyższym wzorcem -->
+  </div>
+</div>
 
 
 
+</fieldset>
+</form>
 
         <!-- Koniec formularza -->
 
