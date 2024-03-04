@@ -5,6 +5,50 @@ body {
   overflow-x: hidden;
 }
 
+.form-dane-podstawowe, .form-dane-opcjonalne{
+  width: 100%;
+  background-color: rebeccapurple;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form-sterowanie{
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(175, 233, 184);
+}
+.form-funkcje-inteligetnego-domu{
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(220, 213, 243);
+}
+
+.form-systemy-w-inwestycji{
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(216, 239, 190);
+}
+
+.form-dane-architekta{
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(242, 186, 186);
+}
+
+.col1, .col2{
+  width: 50%;
+  padding: 20px;
+  background-color: wheat;
+}
+.col0{
+  width: 60%;
+  padding: 20px;
+  margin: auto;
+  background-color: burlywood;
+  
+}
+
 .layout_padding {
   padding: 90px 0;
 }
@@ -981,6 +1025,7 @@ a:focus {
   -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
 }
+
 
 .contact_section .form_container input::-webkit-input-placeholder {
   color: #252525;

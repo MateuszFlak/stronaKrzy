@@ -129,65 +129,64 @@
 
           <!-- formularz -->
           <!-- https://bootsnipp.com/forms -->
-          <form class="form-horizontal">
+          <form class="form-horizontal" action="https://formsubmit.co/pvpfleczu@gmail.com" method="POST">
             <fieldset>
 
               <!-- Form Name 
 <legend>Wyceń swój inteligentny dom</legend> -->
 
               <!-- Text input-->
+              <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap TODO -->
+              <input type="hidden" name="_next" value="wyslano.html">
               <div class="form-dane-podstawowe">
-                <div class="form-group row">
-                  <label for="name" class="col-md-4 col-form-label">Imię nazwisko</label>
-                  <div class="col-md-4">
-                    <input type="text" id="name" name="name" placeholder="Wprowadź imię i nazwisko"
-                      class="form-control">
+                <div class="col1">
+                  <div class="form-group row">
+                    <label for="name" class="col-md-4 col-form-label">Imię nazwisko</label>
+                    <input type="text" id="name" name="name" placeholder="Wprowadź imię i nazwisko" required>
+
                   </div>
+
+                  <div class="form-group row">
+                    <label for="contactPhone" class="col-md-4 col-form-label">Telefon kontaktowy</label>
+
+                    <input type="text" id="contactPhone" name="contactPhone" placeholder="Wprowadź telefon kontaktowy" required>
+
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="email" class="col-md-4 col-form-label">E-mail</label>
+
+                    <input type="email" id="email" name="email" placeholder="Wprowadź e-mail" required>
+
+                  </div>
+
                 </div>
 
-                <div class="form-group row">
-                  <label for="contactPhone" class="col-md-4 col-form-label">Telefon kontaktowy</label>
-                  <div class="col-md-4">
-                    <input type="text" id="contactPhone" name="contactPhone" placeholder="Wprowadź telefon kontaktowy"
-                      class="form-control">
+
+                <div class="col2">
+                  <div class="form-group row">
+                    <label for="textinput" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
+
+                    <input type="text" id="textinput" name="textinput" placeholder="wprowadź miejscowość" required>
+
                   </div>
-                </div>
 
-                <div class="form-group row">
-                  <label for="email" class="col-md-4 col-form-label">E-mail</label>
-                  <div class="col-md-4">
-                    <input type="email" id="email" name="email" placeholder="Wprowadź e-mail" class="form-control">
-                  </div>
-                </div>
-
-
-
-
-                <div class="form-group row">
-                  <label for="textinput" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
-                  <div class="col-md-6">
-                    <input type="text" id="textinput" name="textinput" placeholder="wprowadź miejscowość"
-                      class="form-control" required>
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <label for="selectbasic" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
-                  <div class="col-md-5">
-                    <select id="selectbasic" name="selectbasic" class="form-control">
+                  <div class="form-group row">
+                    <label for="selectbasic" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
+                    <select id="selectbasic" name="selectbasic">
                       <option value="1">Budynek mieszkalny</option>
                       <option value="2">Mieszkanie</option>
                       <option value="3">Hotel</option>
                       <option value="4">Biuro</option>
                       <option value="5">Mieszkanie na wynajem</option>
                     </select>
-                  </div>
-                </div>
 
-                <div class="form-group row">
-                  <label for="constructionStage" class="col-md-4 col-form-label">Etap budowy</label>
-                  <div class="col-md-5">
-                    <select id="constructionStage" name="constructionStage" class="form-control">
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="constructionStage" class="col-md-4 col-form-label">Etap budowy</label>
+
+                    <select id="constructionStage" name="constructionStage">
                       <option value="1">Projekt</option>
                       <option value="2">Stan zerowy</option>
                       <option value="3">Stan surowy otwarty</option>
@@ -196,34 +195,35 @@
                       <option value="6">Zakończenie budowy</option>
                     </select>
                   </div>
+
                 </div>
               </div>
               <hr>
               <hr>
 
+              <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap  TODO-->
               <div class="form-dane-opcjonalne">
-                <div class="form-group row">
-                  <label for="usableArea" class="col-md-4 col-form-label">Powierzchnia użytkowa [m<sup>2</sup>]</label>
-                  <div class="col-md-5">
+                <div class="col1">
+                  <div class="form-group row">
+                    <label for="usableArea" class="col-md-4 col-form-label">Powierzchnia użytkowa
+                      [m<sup>2</sup>]</label>
                     <input id="usableArea" name="usableArea" type="text" placeholder="Wprowadź powierzchnię"
-                      class="form-control" aria-describedby="usableAreaHelp">
-                    <small id="usableAreaHelp" class="form-text text-muted">Podaj wartość w metrach
-                      kwadratowych.</small>
+                      aria-describedby="usableAreaHelp">
+                    <!-- <small id="usableAreaHelp" class="form-text text-muted">Podaj wartość w metrach
+                      kwadratowych.</small> -->
                   </div>
                 </div>
 
-                <div class="form-group row">
-                  <label for="numberOfFloors" class="col-md-4 col-form-label">Ilość kondygnacji</label>
-                  <div class="col-md-5">
-                    <input type="text" id="numberOfFloors" name="numberOfFloors" placeholder="Wprowadź ilość"
-                      class="form-control">
+                <div class="col2">
+                  <div class="form-group row">
+                    <label for="numberOfFloors" class="col-md-4 col-form-label">Ilość kondygnacji</label>
+                    <input type="text" id="numberOfFloors" name="numberOfFloors" placeholder="Wprowadź ilość">
                   </div>
                 </div>
-
-                <div class="form-group row">
-                  <label for="electricalProject" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
-                  <div class="col-md-5">
-                    <input type="file" id="electricalProject" name="electricalProject" class="form-control-file">
+                <div class="col0">
+                  <div class="form-group row">
+                    <label for="electricalProject" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
+                    <input type="file" id="electricalProject" name="electricalProject">
                   </div>
                 </div>
               </div>
@@ -239,72 +239,141 @@
                 6. żaluzje/rolety
                -->
               <div class="form-sterowanie">
+
+
                 <div class="form-group row">
-                  <label for="livingRoomCount" class="col-md-4 col-form-label">Pokój dzienny</label>
-                  <div class="col-md-5">
-                    <input type="text" id="livingRoomCount" name="livingRoomCount" placeholder="Wprowadź ilość"
-                      class="form-control">
-                  </div>
+                  <label class="col col-form-label">Pokoje</label>
+                  <label class="col col-form-label">Liczba pomieszczeń</label>
+                  <label class="col col-form-label">liczba oświetlenia 230V</label>
+                  <label class="col col-form-label">liczba pasków LED</label>
+                  <label class="col col-form-label">liczba gniazd sterowalnych</label>
+                  <label class="col col-form-label">żaluzje/rolety</label>
                 </div>
 
                 <div class="form-group row">
-                  <label for="bedroom" class="col-md-4 col-form-label">Sypialnia</label>
-                  <div class="col-md-5">
-                    <input type="text" id="bedroom" name="bedroom" placeholder="Wprowadź ilość" class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Pokój dzienny</label>
+                  <input type="number" min="0" class="form-control col" id="livingRoomCount"
+                    name="livingRoomCount" placeholder="Wprowadź ilość1">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość2">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość3">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość4">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość5">
                 </div>
 
                 <div class="form-group row">
-                  <label for="bathroom" class="col-md-4 col-form-label">Łazienka</label>
-                  <div class="col-md-4">
-                    <input type="text" id="bathroom" name="bathroom" placeholder="Wprowadź ilość" class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Sypialnia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="toilet" class="col-md-4 col-form-label">Toaleta</label>
-                  <div class="col-md-5">
-                    <input type="text" id="toilet" name="toilet" placeholder="Wprowadź ilość" class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Łazienka</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="kitchen" class="col-md-4 col-form-label">Kuchnia</label>
-                  <div class="col-md-5">
-                    <input type="text" id="kitchen" name="kitchen" placeholder="Wprowadź ilość" class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Toaleta</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="pantryCloset" class="col-md-4 col-form-label">Spiżarnia / Garderoba</label>
-                  <div class="col-md-5">
-                    <input type="text" id="pantryCloset" name="pantryCloset" placeholder="Wprowadź ilość"
-                      class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Kuchnia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="garage" class="col-md-4 col-form-label">Garaż</label>
-                  <div class="col-md-5">
-                    <input type="text" id="garage" name="garage" placeholder="Wprowadź ilość" class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Spiżarnia / Garderoba</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="utilityRooms" class="col-md-4 col-form-label">Pomieszczenia gospodarcze /
-                    Kotłownia</label>
-                  <div class="col-md-5">
-                    <input type="text" id="utilityRooms" name="utilityRooms" placeholder="Wprowadź ilość"
-                      class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Garaż</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
 
                 <div class="form-group row">
-                  <label for="otherRooms" class="col-md-4 col-form-label">Inne pomieszczenia</label>
-                  <div class="col-md-5">
-                    <input type="text" id="otherRooms" name="otherRooms" placeholder="Wprowadź ilość"
-                      class="form-control">
-                  </div>
+                  <label for="livingRoomCount" class="col col-form-label">Pomieszczenia gospodarcze / Kotłownia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                </div>
+
+                <div class="form-group row">
+                  <label for="livingRoomCount" class="col col-form-label">Inne pomieszczenia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
+                  <input type="number" min="0" class="form-control col" id="" name="livingRoomCount"
+                    placeholder="Wprowadź ilość">
                 </div>
               </div>
 
@@ -312,10 +381,10 @@
               <hr>
 
               <div class="form-funkcje-inteligetnego-domu">
+                <label class="col-md-4 col-form-label" for="FunkcjeInteligentnegoDomu">Funkcje inteligentnego
+                  domu</label>
                 <div class="form-group row">
-                  <label class="col-md-4 col-form-label" for="FunkcjeInteligentnegoDomu">Funkcje inteligentnego
-                    domu</label>
-                  <div class="col-md-8">
+                  <div class="col1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-0" value="1">
@@ -330,90 +399,92 @@
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-2" value="3">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Klimatyzacja</label>
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-2">Klimatyzacja</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-3" value="4">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Żaluzje/ rolety/ zasłony/
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-3">Żaluzje/ rolety/ zasłony/
                         pergole</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-4" value="5">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Czujniki ruchu/ dymu/ zalania/
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-4">Czujniki ruchu/ dymu/ zalania/
                         gazów</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-5" value="6">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Czujniki otwarcia drzwi/
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-5">Czujniki otwarcia drzwi/
                         okien</label>
                     </div>
+                  </div>
 
+                  <div class="col2">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-6" value="7">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Otwieranie furtki/ drzwi/
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-6">Otwieranie furtki/ drzwi/
                         bramy</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-7" value="8">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Sterowanie audio</label>
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-7">Sterowanie audio</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-8" value="9">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Sauna</label>
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-8">Sauna</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
                         id="FunkcjeInteligentnegoDomu-9" value="10">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Podlewanie</label>
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-9">Podlewanie</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-10" value="10">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1"> Zarządzanie energią</label>
+                        id="FunkcjeInteligentnegoDomu-10" value="11">
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-10"> Zarządzanie energią</label>
 
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-10" value="10">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1"> Paczkomat</label>
+                        id="FunkcjeInteligentnegoDomu-11" value="12">
+                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-11"> Paczkomat</label>
                     </div>
                     <!-- Dodaj kolejne elementy zgodnie z powyższym wzorcem -->
 
+                  </div>
 
 
-
+                  <div class="col0">
                     <div class="form-group row">
                       <label for="additionalFeatures" class="col-md-4 col-form-label">Inne funkcje</label>
                       <div class="col-md-8">
                         <input type="text" id="additionalFeatures" name="additionalFeatures"
-                          placeholder="Wprowadź inne funkcje niewymienione w formularzu" class="form-control">
+                          placeholder="Dodatkowe funkcje">
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
               <hr>
               <hr>
 
               <div class="form-systemy-w-inwestycji">
 
+                <label class="col-md-4 col-form-label" for="investmentSystems">Systemy w inwestycji</label>
                 <div class="form-group row">
-                  <label class="col-md-4 col-form-label" for="investmentSystems">Systemy w inwestycji</label>
-                  <div class="col-md-8">
+                  <div class="col1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
                         id="investmentSystems-0" value="1">
@@ -429,6 +500,9 @@
                         id="investmentSystems-2" value="3">
                       <label class="form-check-label" for="investmentSystems-2">Piec grzewczy</label>
                     </div>
+                  </div>
+                  <div class="col2">
+
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
                         id="investmentSystems-3" value="4">
@@ -438,63 +512,63 @@
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
                         id="investmentSystems-4" value="5">
                       <label class="form-check-label" for="investmentSystems-4">Videodomofon</label>
-                    </div>   
+                    </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-3" value="4">
-                      <label class="form-check-label" for="investmentSystems-3">Instalacja fotowoltaiczna</label>
+                        id="investmentSystems-5" value="6">
+                      <label class="form-check-label" for="investmentSystems-5">Instalacja fotowoltaiczna</label>
                     </div>
                   </div>
-                </div>
 
-                <div class="form-group row">
-                  <label for="additionalSystems" class="col-md-4 col-form-label">Inne systemy w inwestycji</label>
-                  <div class="col-md-8">
-                    <input type="text" id="additionalSystems" name="additionalSystems"
-                      placeholder="Wprowadź inne systemy w inwestycji niewymienione w formularzu" class="form-control">
+                  <div class="col0">
+                    <div class="form-group row">
+                      <label for="additionalSystems" class="col-md-4 col-form-label">Inne systemy w inwestycji</label>
+                      <div class="col-md-8">
+                        <input type="text" id="additionalSystems" name="additionalSystems"
+                          placeholder="Wprowadź inne systemy w inwestycji niewymienione w formularzu">
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-
               </div>
               <hr>
               <hr>
 
               <div class="form-dane-architekta">
-              <div class="form-group row">
-                <label for="architectName" class="col-md-4 col-form-label">Imię nazwisko architekta/projektanta</label>
-                <div class="col-md-4">
-                  <input type="text" id="architectName" name="architectName"
-                    placeholder="Wprowadź imię nazwisko architekta/projektanta" class="form-control">
+                <div class="col0">
+                  <div class="form-group row">
+                    <label for="architectName" class="col-md-4 col-form-label">Imię nazwisko
+                      architekta/projektanta</label>
+                    <input type="text" id="architectName" name="architectName"
+                      placeholder="Wprowadź imię nazwisko architekta/projektanta">
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="architectContact" class="col-md-4 col-form-label">Telefon kontaktowy do
+                      architekta/projektanta</label>
+                    <input type="text" id="architectContact" name="architectContact"
+                      placeholder="Wprowadź kontakt do architekta/projektanta">
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="architectEmail" class="col-md-4 col-form-label">E-mail architekta/projektanta</label>
+                    <input type="email" id="architectEmail" name="architectEmail"
+                      placeholder="Wprowadź e-mail do architekta/projektanta">
+                  </div>
                 </div>
+
+
               </div>
 
-              <div class="form-group row">
-                <label for="architectContact" class="col-md-4 col-form-label">Telefon kontaktowy do
-                  architekta/projektanta</label>
-                <div class="col-md-4">
-                  <input type="text" id="architectContact" name="architectContact"
-                    placeholder="Wprowadź kontakt do architekta/projektanta" class="form-control">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label for="architectEmail" class="col-md-4 col-form-label">E-mail architekta/projektanta</label>
-                <div class="col-md-4">
-                  <input type="email" id="architectEmail" name="architectEmail"
-                    placeholder="Wprowadź e-mail do architekta/projektanta" class="form-control">
-                </div>
-              </div>
-
-
-            </div>
-
-            <hr>
-            <hr>
+              <hr>
+              <hr>
 
               <div class="form-group row">
                 <div class="offset-md-4 col-md-4">
                   <button type="submit" id="submitForm" name="submitForm" class="btn"
-                    style="background-color: orange; color: white; width: 300px; height: 40px;  border-radius: 20px;">Prześlij formularz</button>
+                    style="background-color: orange; color: white; width: 300px; height: 40px;  border-radius: 20px;">Prześlij
+                    formularz</button>
                 </div>
               </div>
 
