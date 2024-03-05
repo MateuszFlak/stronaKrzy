@@ -141,15 +141,15 @@
               <div class="form-dane-podstawowe">
                 <div class="col1">
                   <div class="form-group row">
-                    <label for="name" class="col-md-4 col-form-label">Imię nazwisko</label>
-                    <input type="text" id="name" name="name" placeholder="Wprowadź imię i nazwisko" required>
+                    <label for="imie_nazwisko" class="col-md-4 col-form-label">Imię nazwisko</label>
+                    <input type="text" id="imie_nazwisko" name="imie_nazwisko" placeholder="Wprowadź imię i nazwisko" required>
 
                   </div>
 
                   <div class="form-group row">
-                    <label for="kontaktTELEFONICZNY" class="col-md-4 col-form-label">Telefon kontaktowy</label>
+                    <label for="kontakt_telefoniczny" class="col-md-4 col-form-label">Telefon kontaktowy</label>
 
-                    <input type="text" id="kontaktTELEFONICZNY" name="kontaktTELEFONICZNY" placeholder="Wprowadź telefon kontaktowy" required>
+                    <input type="text" id="kontakt_telefoniczny" name="kontakt_telefoniczny" placeholder="Wprowadź telefon kontaktowy" required>
 
                   </div>
 
@@ -165,15 +165,15 @@
 
                 <div class="col2">
                   <div class="form-group row">
-                    <label for="textinput" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
+                    <label for="lokalizacja" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
 
-                    <input type="text" id="textinput" name="textinput" placeholder="wprowadź miejscowość" required>
+                    <input type="text" id="lokalizacja" name="lokalizacja" placeholder="wprowadź miejscowość" required>
 
                   </div>
 
                   <div class="form-group row">
-                    <label for="selectbasic" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
-                    <select id="selectbasic" name="selectbasic">
+                    <label for="rodzaj_inwestycji" class="col-md-4 col-form-label">Rodzaj inwestycji</label>
+                    <select id="rodzaj_inwestycji" name="rodzaj_inwestycji">
                       <option value="1">Budynek mieszkalny</option>
                       <option value="2">Mieszkanie</option>
                       <option value="3">Hotel</option>
@@ -184,9 +184,9 @@
                   </div>
 
                   <div class="form-group row">
-                    <label for="constructionStage" class="col-md-4 col-form-label">Etap budowy</label>
+                    <label for="etap_budowy" class="col-md-4 col-form-label">Etap budowy</label>
 
-                    <select id="constructionStage" name="constructionStage">
+                    <select id="etap_budowy" name="etap_budowy">
                       <option value="1">Projekt</option>
                       <option value="2">Stan zerowy</option>
                       <option value="3">Stan surowy otwarty</option>
@@ -205,9 +205,9 @@
               <div class="form-dane-opcjonalne">
                 <div class="col1">
                   <div class="form-group row">
-                    <label for="usableArea" class="col-md-4 col-form-label">Powierzchnia użytkowa
+                    <label for="powierzchnia_uzytkowa" class="col-md-4 col-form-label">Powierzchnia użytkowa
                       [m<sup>2</sup>]</label>
-                    <input id="usableArea" name="usableArea" type="text" placeholder="Wprowadź powierzchnię"
+                    <input id="powierzchnia_uzytkowa" name="powierzchnia_uzytkowa" type="text" placeholder="Wprowadź powierzchnię"
                       aria-describedby="usableAreaHelp">
                     <!-- <small id="usableAreaHelp" class="form-text text-muted">Podaj wartość w metrach
                       kwadratowych.</small> -->
@@ -216,14 +216,14 @@
 
                 <div class="col2">
                   <div class="form-group row">
-                    <label for="numberOfFloors" class="col-md-4 col-form-label">Ilość kondygnacji</label>
-                    <input type="text" id="numberOfFloors" name="numberOfFloors" placeholder="Wprowadź ilość">
+                    <label for="ilosc_kondygnacji" class="col-md-4 col-form-label">Ilość kondygnacji</label>
+                    <input type="text" id="ilosc_kondygnacji" name="ilosc_kondygnacji" placeholder="Wprowadź ilość">
                   </div>
                 </div>
                 <div class="col0">
                   <div class="form-group row">
-                    <label for="electricalProject" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
-                    <input type="file" id="electricalProject" name="electricalProject">
+                    <label for="projekt_elektryczny" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
+                    <input type="file" id="projekt_elektryczny" name="projekt_elektryczny">
                   </div>
                 </div>
               </div>
@@ -387,39 +387,39 @@
                   <div class="col1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-0" value="1">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-0">Oświetlenie</label>
+                        id="oswietlenie" value="1">
+                      <label class="form-check-label" for="oswietlenie">Oświetlenie</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-1" value="2">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-1">Gniazdka</label>
-                    </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-2" value="3">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-2">Klimatyzacja</label>
+                        id="gniazdka" value="2">
+                      <label class="form-check-label" for="gniazdka">Gniazdka</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-3" value="4">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-3">Żaluzje/ rolety/ zasłony/
+                        id="klimatyzacja" value="3">
+                      <label class="form-check-label" for="klimatyzacja">Klimatyzacja</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
+                        id="rolety" value="4">
+                      <label class="form-check-label" for="rolety">Żaluzje/ rolety/ zasłony/
                         pergole</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-4" value="5">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-4">Czujniki ruchu/ dymu/ zalania/
+                        id="czujniki" value="5">
+                      <label class="form-check-label" for="czujniki">Czujniki ruchu/ dymu/ zalania/
                         gazów</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-5" value="6">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-5">Czujniki otwarcia drzwi/
+                        id="kontaktrony" value="6">
+                      <label class="form-check-label" for="kontaktrony">Czujniki otwarcia drzwi/
                         okien</label>
                     </div>
                   </div>
@@ -427,39 +427,39 @@
                   <div class="col2">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-6" value="7">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-6">Otwieranie furtki/ drzwi/
+                        id="brama" value="7">
+                      <label class="form-check-label" for="brama">Otwieranie furtki/ drzwi/
                         bramy</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-7" value="8">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-7">Sterowanie audio</label>
+                        id="audio" value="8">
+                      <label class="form-check-label" for="audio">Sterowanie audio</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-8" value="9">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-8">Sauna</label>
+                        id="sauna" value="9">
+                      <label class="form-check-label" for="sauna">Sauna</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-9" value="10">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-9">Podlewanie</label>
+                        id="podlewanie" value="10">
+                      <label class="form-check-label" for="podlewanie">Podlewanie</label>
                     </div>
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-10" value="11">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-10"> Zarządzanie energią</label>
+                        id="energia" value="11">
+                      <label class="form-check-label" for="energia"> Zarządzanie energią</label>
 
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="FunkcjeInteligentnegoDomu[]"
-                        id="FunkcjeInteligentnegoDomu-11" value="12">
-                      <label class="form-check-label" for="FunkcjeInteligentnegoDomu-11"> Paczkomat</label>
+                        id="paczkomat" value="12">
+                      <label class="form-check-label" for="paczkomat"> Paczkomat</label>
                     </div>
                     <!-- Dodaj kolejne elementy zgodnie z powyższym wzorcem -->
 
@@ -487,36 +487,36 @@
                   <div class="col1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-0" value="1">
-                      <label class="form-check-label" for="investmentSystems-0">System alarmowy</label>
+                        id="alarm" value="1">
+                      <label class="form-check-label" for="alarm">System alarmowy</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-1" value="2">
-                      <label class="form-check-label" for="investmentSystems-1">System monitoringu</label>
+                        id="monitoring" value="2">
+                      <label class="form-check-label" for="monitoring">System monitoringu</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-2" value="3">
-                      <label class="form-check-label" for="investmentSystems-2">Piec grzewczy</label>
+                        id="piec" value="3">
+                      <label class="form-check-label" for="piec">Piec grzewczy</label>
                     </div>
                   </div>
                   <div class="col2">
 
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-3" value="4">
-                      <label class="form-check-label" for="investmentSystems-3">Pompa ciepła</label>
+                        id="pompa_ciepla" value="4">
+                      <label class="form-check-label" for="pompa_ciepla">Pompa ciepła</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-4" value="5">
-                      <label class="form-check-label" for="investmentSystems-4">Videodomofon</label>
+                        id="videodomofon" value="5">
+                      <label class="form-check-label" for="videodomofon">Videodomofon</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="investmentSystems[]"
-                        id="investmentSystems-5" value="6">
-                      <label class="form-check-label" for="investmentSystems-5">Instalacja fotowoltaiczna</label>
+                        id="fotowoltaika" value="6">
+                      <label class="form-check-label" for="fotowoltaika">Instalacja fotowoltaiczna</label>
                     </div>
                   </div>
 
@@ -538,22 +538,22 @@
               <div class="form-dane-architekta">
                 <div class="col0">
                   <div class="form-group row">
-                    <label for="architectName" class="col-md-4 col-form-label">Imię nazwisko
+                    <label for="architekt" class="col-md-4 col-form-label">Imię nazwisko
                       architekta/projektanta</label>
-                    <input type="text" id="architectName" name="architectName"
+                    <input type="text" id="architekt" name="architekt"
                       placeholder="Wprowadź imię nazwisko architekta/projektanta">
                   </div>
 
                   <div class="form-group row">
-                    <label for="architectContact" class="col-md-4 col-form-label">Telefon kontaktowy do
+                    <label for="architekt_kontakt" class="col-md-4 col-form-label">Telefon kontaktowy do
                       architekta/projektanta</label>
-                    <input type="text" id="architectContact" name="architectContact"
+                    <input type="text" id="architekt_kontakt" name="architekt_kontakt"
                       placeholder="Wprowadź kontakt do architekta/projektanta">
                   </div>
 
                   <div class="form-group row">
-                    <label for="architectEmail" class="col-md-4 col-form-label">E-mail architekta/projektanta</label>
-                    <input type="email" id="architectEmail" name="architectEmail"
+                    <label for="architekt_email" class="col-md-4 col-form-label">E-mail architekta/projektanta</label>
+                    <input type="email" id="architekt_email" name="architekt_email"
                       placeholder="Wprowadź e-mail do architekta/projektanta">
                   </div>
                 </div>
