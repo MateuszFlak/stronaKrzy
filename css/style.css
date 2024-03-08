@@ -4,46 +4,56 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+.wycena {
+  /* background-color: #f07b26; */
+  background-attachment: fixed;
+  background-image: url("https://cdn.bitrix24.pl/b12610147/landing/ab5/ab50747914a183e384b626a60dd8c5bb/fot_piotrszalanski.pl_3195_2x.jpg");
+}
+
+.container-wycena {
+  background-color: rgb(219, 232, 232);
+}
 
 .form-dane-podstawowe, .form-dane-opcjonalne{
   width: 100%;
-  background-color: rebeccapurple;
-  padding: 5px;
+  /* background-color: rebeccapurple; */
+  /* padding: 5px; */
+  opacity: 1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .form-sterowanie{
   width: 100%;
-  padding: 20px;
-  background-color: rgb(175, 233, 184);
+  /* padding: 20px; */
+  /* background-color: rgb(175, 233, 184); */
 }
 .form-funkcje-inteligetnego-domu{
   width: 100%;
-  padding: 20px;
-  background-color: rgb(220, 213, 243);
+  /* padding: 20px; */
+  /* background-color: rgb(220, 213, 243); */
 }
 
 .form-systemy-w-inwestycji{
   width: 100%;
-  padding: 20px;
-  background-color: rgb(216, 239, 190);
+  /* padding: 20px; */
+  /* background-color: rgb(216, 239, 190); */
 }
 
 .form-dane-architekta{
   width: 100%;
-  padding: 20px;
-  background-color: rgb(242, 186, 186);
+  /* padding: 20px; */
+  /* background-color: rgb(242, 186, 186); */
 }
 
 .col1, .col2{
   width: 50%;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: wheat;
 }
 .col0{
   width: 60%;
-  padding: 20px;
+  /* padding: 20px; */
   margin: auto;
   background-color: burlywood;
   
