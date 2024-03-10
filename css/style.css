@@ -4,11 +4,15 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+
 .wycena {
-  /* background-color: #f07b26; */
-  background-attachment: fixed;
-  background-image: url("https://cdn.bitrix24.pl/b12610147/landing/ab5/ab50747914a183e384b626a60dd8c5bb/fot_piotrszalanski.pl_3195_2x.jpg"); */
+  background-color: rgba(0, 0, 0, 0.043); /* Equivalent to #0000000b, but more readable */
+  background-image: url("https://images.pexels.com/photos/5292194/pexels-photo-5292194.jpeg");
+  background-size: cover; /* Ensures that the background covers the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
+
 
 .container-wycena {
   background-color: rgb(200, 200, 200);
