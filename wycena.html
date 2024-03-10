@@ -122,9 +122,7 @@
     <div class="container container-wycena">
       <div class="row">
         <div class="col-md-6">
-          <h2>
-            Wyceń swój inteligentny dom
-          </h2>
+          <h2> Wyceń swój inteligentny dom w 6 krokach </h2>
 
 
           <!-- formularz -->
@@ -138,10 +136,11 @@
               <!-- Text input-->
               <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap TODO -->
               <div class="form-dane-podstawowe">
+                <h1>1. Dane podstawowe</h3>
                 <div class="col1">
                   <div class="form-group row">
                     <label for="imie_nazwisko" class="col-md-4 col-form-label">Imię nazwisko</label>
-                    <input type="text" id="imie_nazwisko" name="imie_nazwisko" placeholder="Wprowadź imię i nazwisko"
+                    <input type="text" id="imie_nazwisko" name="imie_nazwisko" placeholder="Wprowadź"
                       required>
 
                   </div>
@@ -150,14 +149,14 @@
                     <label for="kontakt_telefoniczny" class="col-md-4 col-form-label">Telefon kontaktowy</label>
 
                     <input type="text" id="kontakt_telefoniczny" name="kontakt_telefoniczny"
-                      placeholder="Wprowadź telefon kontaktowy" required>
+                      placeholder="Wprowadź" required>
 
                   </div>
 
                   <div class="form-group row">
                     <label for="email" class="col-md-4 col-form-label">E-mail</label>
 
-                    <input type="email" id="email" name="email" placeholder="Wprowadź e-mail" required>
+                    <input type="email" id="email" name="email" placeholder="Wprowadź" required>
 
                   </div>
 
@@ -168,7 +167,7 @@
                   <div class="form-group row">
                     <label for="lokalizacja" class="col-md-4 col-form-label">Lokalizacja inwestycji</label>
 
-                    <input type="text" id="lokalizacja" name="lokalizacja" placeholder="wprowadź miejscowość" required>
+                    <input type="text" id="lokalizacja" name="lokalizacja" placeholder="Wprowadź" required>
 
                   </div>
 
@@ -199,8 +198,7 @@
 
                 </div>
               </div>
-              <hr>
-              <hr>
+              <h3>2. Dane opcjonalne</h3>
 
               <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap  TODO-->
               <div class="form-dane-opcjonalne">
@@ -209,7 +207,7 @@
                     <label for="powierzchnia_uzytkowa" class="col-md-4 col-form-label">Powierzchnia użytkowa
                       </label>
                     <input id="powierzchnia_uzytkowa" name="powierzchnia_uzytkowa" type="text"
-                      placeholder="Wprowadź w m2" aria-describedby="usableAreaHelp">
+                      placeholder="Wprowadź" aria-describedby="usableAreaHelp">
                     <!-- <small id="usableAreaHelp" class="form-text text-muted">Podaj wartość w metrach
                       kwadratowych.</small> -->
                   </div>
@@ -218,7 +216,7 @@
                 <div class="col2">
                   <div class="form-group row">
                     <label for="ilosc_kondygnacji" class="col-md-4 col-form-label">Ilość kondygnacji</label>
-                    <input type="text" id="ilosc_kondygnacji" name="ilosc_kondygnacji" placeholder="Wprowadź ilość">
+                    <input type="text" id="ilosc_kondygnacji" name="ilosc_kondygnacji" placeholder="Wprowadź">
                   </div>
                 </div>
                 <div class="col0">
@@ -228,162 +226,11 @@
                   </div>
                 </div>
               </div>
-              <hr>
-              <hr>
-
-              <!-- 
-                1. pokoje
-                2. liczba pomieszczeń
-                3. liczba oświetlenia 230V
-                4. liczba pasków LED
-                5. liczba gniazd sterowalnych
-                6. żaluzje/rolety
-               -->
-              <div class="form-sterowanie">
-
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Pokoje</label>
-                  <label class="col col-form-label">Liczba pomieszczeń</label>
-                  <label class="col col-form-label">liczba oświetlenia 230V</label>
-                  <label class="col col-form-label">liczba pasków LED</label>
-                  <label class="col col-form-label">liczba gniazd sterowalnych</label>
-                  <label class="col col-form-label">żaluzje/rolety</label>
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Pokój dzienny</label>
-                  <input type="number" min="0" class="form-control col" id="1" name="pokojDziennyLiczba"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="2" name="pokojDziennyOswietlenie"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="3" name="pokojDziennyLED"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="4" name="pokojDziennyGniazdo"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="8" name="pokojDziennyRolety"
-                    placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Sypialnia</label>
-                  <input type="number" min="0" class="form-control col" id="" name="sypialniaLiczba"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="sypialniaOswietlenie"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="sypialniaLED"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="sypialniaGniazdo"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="sypialniaRolety"
-                    placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Łazienka</label>
-                  <input type="number" min="0" class="form-control col" id="" name="lazienkaLiczba"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="lazienkaOswietlenie"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="lazienkaLED"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="lazienkaGniazdo"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="lazienkaRolety"
-                    placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Toaleta</label>
-                  <input type="number" min="0" class="form-control col" id="" name="toaletaLiczba"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="toaletaOswietlenie"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="toaletaLED"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="toaletaGniazdo"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="toaletaRolety"
-                    placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Kuchnia</label>
-                  <input type="number" min="0" class="form-control col" id="" name="kuchniaLiczba"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="kuchniaOswietlenie"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="kuchniaLED"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="kuchniaGniazdo"
-                    placeholder="Wprowadź ilość">
-                  <input type="number" min="0" class="form-control col" id="" name="kuchniaRolety"
-                    placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Spiżarnia / Garderoba</label>
-                  <input type="number" min="0" class="form-control col" id="" name="spizarniaLiczba"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="spizarniaOswietlenie"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="spizarniaLED"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="spizarniaGniazdo"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="spizarniaRolety"
-                  placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Garaż</label>
-                  <input type="number" min="0" class="form-control col" id="" name="garazLiczba"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="garazOswietlenie"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="garazLED"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="garazGniazdo"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="tgarazRolety"
-                  placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Składzik / Kotłownia</label>
-                  <input type="number" min="0" class="form-control col" id="" name="gospodarczeLiczba"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="gospodarczeOswietlenie"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="gospodarczeLED"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="gospodarczeGniazdo"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="gospodarczeRolety"
-                  placeholder="Wprowadź ilość">
-                </div>
-
-                <div class="form-group row">
-                  <label class="col col-form-label">Inne pomieszczenia</label>
-                  <input type="number" min="0" class="form-control col" id="" name="inneLiczba"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="inneOswietlenie"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="inneLED"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="inneGniazdo"
-                  placeholder="Wprowadź ilość">
-                <input type="number" min="0" class="form-control col" id="" name="inneRolety"
-                  placeholder="Wprowadź ilość">
-                </div>
-              </div>
-
-              <hr>
-              <hr>
-
+                         
               <div class="form-funkcje-inteligetnego-domu">
-                <label class="col-md-4 col-form-label">Funkcje inteligentnego
-                  domu</label>
+                <h3>3.Funkcje inteligentnego domu</h3>
+                <!-- <label class="col-md-4 col-form-label">Funkcje inteligentnego
+                  domu</label> -->
                 <div class="form-group row">
                   <div class="col1">
                     <div class="form-check">
@@ -478,12 +325,151 @@
                   </div>
                 </div>
               </div>
-              <hr>
-              <hr>
+              
+              <h3>4. Sterowanie</h3>
+              <div class="form-sterowanie">
+                
+
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Pokoje</label>
+                  <label class="col col-form-label">Liczba pomieszczeń</label>
+                  <label class="col col-form-label">liczba oświetlenia 230V</label>
+                  <label class="col col-form-label">liczba pasków LED</label>
+                  <label class="col col-form-label">liczba gniazd sterowalnych</label>
+                  <label class="col col-form-label">żaluzje/rolety</label>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Pokój dzienny</label>
+                  <input type="number" min="0" class="form-control col" id="1" name="pokojDziennyLiczba"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="2" name="pokojDziennyOswietlenie"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="3" name="pokojDziennyLED"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="4" name="pokojDziennyGniazdo"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="8" name="pokojDziennyRolety"
+                    placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Sypialnia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="sypialniaLiczba"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="sypialniaOswietlenie"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="sypialniaLED"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="sypialniaGniazdo"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="sypialniaRolety"
+                    placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Łazienka</label>
+                  <input type="number" min="0" class="form-control col" id="" name="lazienkaLiczba"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="lazienkaOswietlenie"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="lazienkaLED"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="lazienkaGniazdo"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="lazienkaRolety"
+                    placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Toaleta</label>
+                  <input type="number" min="0" class="form-control col" id="" name="toaletaLiczba"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="toaletaOswietlenie"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="toaletaLED"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="toaletaGniazdo"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="toaletaRolety"
+                    placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Kuchnia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="kuchniaLiczba"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="kuchniaOswietlenie"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="kuchniaLED"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="kuchniaGniazdo"
+                    placeholder="">
+                  <input type="number" min="0" class="form-control col" id="" name="kuchniaRolety"
+                    placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Spiżarnia / Garderoba</label>
+                  <input type="number" min="0" class="form-control col" id="" name="spizarniaLiczba"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="spizarniaOswietlenie"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="spizarniaLED"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="spizarniaGniazdo"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="spizarniaRolety"
+                  placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Garaż</label>
+                  <input type="number" min="0" class="form-control col" id="" name="garazLiczba"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="garazOswietlenie"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="garazLED"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="garazGniazdo"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="tgarazRolety"
+                  placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Składzik / Kotłownia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="gospodarczeLiczba"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="gospodarczeOswietlenie"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="gospodarczeLED"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="gospodarczeGniazdo"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="gospodarczeRolety"
+                  placeholder="">
+                </div>
+
+                <div class="form-group row">
+                  <label class="col col-form-label">Inne pomieszczenia</label>
+                  <input type="number" min="0" class="form-control col" id="" name="inneLiczba"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="inneOswietlenie"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="inneLED"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="inneGniazdo"
+                  placeholder="">
+                <input type="number" min="0" class="form-control col" id="" name="inneRolety"
+                  placeholder="">
+                </div>
+              </div>
 
               <div class="form-systemy-w-inwestycji">
-
-                <label class="col-md-4 col-form-label">Systemy w inwestycji</label>
+                <h3>5. Systemy w inwestycji</h3>
+                <!-- <label class="col-md-4 col-form-label">Systemy w inwestycji</label> -->
                 <div class="form-group row">
                   <div class="col1">
                     <div class="form-check">
@@ -524,36 +510,36 @@
                       <label class="col-md-4 col-form-label">Inne systemy w inwestycji</label>
                       <div class="col-md-8">
                         <input type="text" name="inneSystemy"
-                          placeholder="Wprowadź inne systemy w inwestycji niewymienione w formularzu">
+                          placeholder="Wprowadź">
                       </div>
                     </div>
 
                   </div>
                 </div>
               </div>
-              <hr>
-              <hr>
+              
 
               <div class="form-dane-architekta">
+                <h3>6. Dane do architekta/projektanta (opcjonalnie)</h3>
                 <div class="col0">
                   <div class="form-group row">
                     <label for="architekt" class="col-md-4 col-form-label">Imię nazwisko
-                      architekta/projektanta</label>
+                      </label>
                     <input type="text" id="architekt" name="architekt"
-                      placeholder="Wprowadź imię nazwisko architekta/projektanta">
+                      placeholder="Wprowadź">
                   </div>
 
                   <div class="form-group row">
-                    <label for="architekt_kontakt" class="col-md-4 col-form-label">Telefon kontaktowy do
-                      architekta/projektanta</label>
+                    <label for="architekt_kontakt" class="col-md-4 col-form-label">Telefon
+                      </label>
                     <input type="text" id="architekt_kontakt" name="architekt_kontakt"
-                      placeholder="Wprowadź kontakt do architekta/projektanta">
+                      placeholder="Wprowadź">
                   </div>
 
                   <div class="form-group row">
-                    <label for="architekt_email" class="col-md-4 col-form-label">E-mail architekta/projektanta</label>
+                    <label for="architekt_email" class="col-md-4 col-form-label">E-mail</label>
                     <input type="email" id="architekt_email" name="architekt_email"
-                      placeholder="Wprowadź e-mail do architekta/projektanta">
+                      placeholder="Wprowadź">
                   </div>
                 </div>
 

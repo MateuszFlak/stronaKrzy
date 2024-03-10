@@ -11,14 +11,13 @@ body {
 }
 
 .container-wycena {
-  background-color: rgb(219, 232, 232);
+  background-color: rgb(200, 200, 200);
+  opacity: 0.79;
 }
 
 .form-dane-podstawowe, .form-dane-opcjonalne{
   width: 100%;
-  /* background-color: rebeccapurple; */
-  /* padding: 5px; */
-  opacity: 1;
+  opacity: 1; /* Ensure elements are fully opaque */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,14 +47,14 @@ body {
 
 .col1, .col2{
   width: 50%;
-  /* padding: 20px; */
-  background-color: wheat;
+  padding: 20px;
+  /* background-color: rgb(109, 103, 91); */
 }
 .col0{
   width: 60%;
   /* padding: 20px; */
   margin: auto;
-  background-color: burlywood;
+  /* background-color: burlywood; */
   
 }
 
