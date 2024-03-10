@@ -655,7 +655,7 @@ a:focus {
 .about_section .img-box img {
   max-width: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .about_section .img-box::before, .about_section .img-box::after {
