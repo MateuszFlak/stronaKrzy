@@ -17,6 +17,8 @@ body {
 .container-wycena {
   background-color: rgb(200, 200, 200);
   opacity: 0.79;
+  border-radius: 33px;
+  border: 2px solid black;
 }
 
 .form-dane-podstawowe, .form-dane-opcjonalne{
@@ -25,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 .form-sterowanie{
   width: 100%;
@@ -45,7 +48,7 @@ body {
 
 .form-dane-architekta{
   width: 100%;
-  /* padding: 20px; */
+  padding: 20px;
   /* background-color: rgb(242, 186, 186); */
 }
 
@@ -56,14 +59,15 @@ body {
 }
 .col0{
   width: 60%;
-  /* padding: 20px; */
+  padding: 0px;
   margin: auto;
-  /* background-color: burlywood; */
+  
   
 }
 
 .layout_padding {
   padding: 90px 0;
+  
 }
 
 .layout_padding2 {
@@ -102,6 +106,7 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
+  
 }
 
 .heading_container h2 span {
@@ -113,6 +118,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  
 }
 
 a,
@@ -171,6 +177,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          
 }
 
 .header_section .header_top .header_top_container .lang_box {
@@ -185,7 +192,7 @@ a:focus {
 
 .header_section .header_top .header_top_container .lang_box a {
   margin: 0;
-  padding: 5px;
+  /* padding: 5px; */
   background-color: #ffffff;
   color: #000000;
 }
@@ -218,7 +225,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #ed1919;
 }
 
 .header_section .header_top .contact_nav {
