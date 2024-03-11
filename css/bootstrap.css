@@ -1873,7 +1873,7 @@ pre code {
   border: 1px solid #000000;
   border-radius: 11px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin: 2%;
+/*   margin: 2%; */
 }
 
 @media (prefers-reduced-motion: reduce) {
