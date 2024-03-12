@@ -307,33 +307,33 @@
 
   <section id="onas" class="about_section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            Twoi Partnerzy w Świecie Technologii
-                        </h2>
-                    </div>
-                    <p>
-                        Jesteśmy zespołem specjalistów z wykształceniem w automatyce i robotyce oraz informatyce.
-                        Nasz młody i pełen energii zespół posiada bogate doświadczenie w branży automatyki domowej, informatyki i
-                        elektroniki.
-                        Współpracujemy z elektrykami, developerami oraz projektantami, aby dostarczyć Ci kompleksowe rozwiązania.
-                        Nasze zaangażowanie i wiedza są gwarancją profesjonalizmu i bezpieczeństwa w każdym projekcie, który
-                        realizujemy.
-                        Pozwól nam przekształcić Twoje marzenia o inteligentnym domu w rzeczywistość!
-                    </p>
-                </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Twoi Partnerzy w Świecie Technologii
+              </h2>
             </div>
-            <div class="col-md-6">
-                <div class="img-box">
-                    <img src="images/about-img.jpg" alt="">
-                </div>
-            </div>
+            <p>
+              Jesteśmy zespołem specjalistów z wykształceniem w automatyce i robotyce oraz informatyce.
+              Nasz młody i pełen energii zespół posiada bogate doświadczenie w branży automatyki domowej, informatyki i
+              elektroniki.
+              Współpracujemy z elektrykami, developerami oraz projektantami, aby dostarczyć Ci kompleksowe rozwiązania.
+              Nasze zaangażowanie i wiedza są gwarancją profesjonalizmu i bezpieczeństwa w każdym projekcie, który
+              realizujemy.
+              Pozwól nam przekształcić Twoje marzenia o inteligentnym domu w rzeczywistość!
+            </p>
+          </div>
         </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
   <!-- end about section -->
@@ -489,33 +489,35 @@
   </script>
   <!--  OwlCarousel 2 - Filter -->
   <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+
+
   <!-- Google Map -->
   <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
 
   <script>
-    function myMap() {
-        var rzeszow = {lat: 50.041187, lng: 21.999121};
-        var mapProp= {
-            center: new google.maps.LatLng(rzeszow.lat, rzeszow.lng),
-            zoom:9, // Increased zoom level for a closer view
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        
-        var marker = new google.maps.Marker({
-            position: rzeszow,
-            map: map,
-            title: 'Rzeszów'
-        });
+    async function myMap() {
+      const position = { lat: 50.041187, lng: 21.999121 };
+
+      const {AdvancedMarkerElement} = await google.maps.importLibrary("marker")
+      const map = new google.maps.Map(document.getElementById("googleMap"), {
+        zoom: 13,
+        center: position,
+        mapId: "DEMO_MAP_ID", // Map ID is required for advanced markers.
+      });
+
+      const marker = new google.maps.marker.AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: 'Rzeszów',
+      });
     }
 
 
-    </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-    </script>
-    
+  </script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9sMyPlcKDnhfgMFwdk6l27g4LsjcKJjY&callback=myMap"> </script>
+
   <!-- End Google Map -->
 
 </body>
