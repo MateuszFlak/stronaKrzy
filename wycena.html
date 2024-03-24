@@ -127,14 +127,13 @@
 
           <!-- formularz -->
           <!-- https://bootsnipp.com/forms -->
-          <form class="form-horizontal" action="https://az-dom.pl/mail.php" method="POST">
+          <form class="form-horizontal" action="https://az-dom.pl/mail.php" method="POST" enctype="multipart/form-data">
             <fieldset>
 
               <!-- Form Name 
 <legend>Wyceń swój inteligentny dom</legend> -->
 
               <!-- Text input-->
-              <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap TODO -->
               <h3>1. Dane podstawowe</h3>
               <div class="form-dane-podstawowe">
                   <div class="col1">
@@ -200,7 +199,6 @@
               </div>
               <h3>2. Parametry budynku</h3>
 
-              <!-- do wyjebania, zrobić na nowo zgodnie z bootstrap  TODO-->
               <div class="form-dane-opcjonalne">
                 <div class="col1">
                   <div class="form-group row">
@@ -222,7 +220,7 @@
                 <div class="col0">
                   <div class="form-group row">
                     <label for="projekt_elektryczny" class="col-md-4 col-form-label">Dodaj projekt elektryczny</label>
-                    <input type="file" id="projekt_elektryczny" name="projekt_elektryczny">
+                    <input type="file" id="projekt_elektryczny" name="file">
                   </div>
                 </div>
               </div>
