@@ -3,12 +3,13 @@
     error_reporting( E_ALL );
     $from = "strona@az-dom.pl";
     $to = "kontakt@az-dom.pl";
-    $subject = "Wiadomosc z formularza wycena";
-    $headers = "From:" . $from;
-   
-    $naszaWiadomosc = var_export($_POST, true);
+    $subject = "Wiadomość z formularza";
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+	$headers .= 'From: '.$from.''."\r\n";
+    $naszaWiadomosc = print_r($_POST, true);
 
     mail($to,$subject,$naszaWiadomosc, $headers);
-    header('Location: wyslano.html');
+    // header('Location: wyslano.html');
 
 ?>
